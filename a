@@ -1,0 +1,1094 @@
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [2msrc/__tests__/pages/[22m[1mOrders.spec.tsx[22m
+[0m[7m[1m[32m PASS [39m[22m[27m[0m [2msrc/__tests__/pages/[22m[1mFavorites.spec.tsx[22m
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2msrc/__tests__/pages/[22m[1mFoodDetails.spec.tsx[22m
+[1m[31m  [1m● [22m[1mOrders › should not be able to decrement food quantity below than 1[39m[22m
+
+    [2mexpect([22m[31melement[39m[2m).toHaveTextContent()[22m
+
+    Expected element to have text content:
+    [32m  1[39m
+    Received:
+    [31m  0[39m
+[2m[22m
+[2m    [0m [90m 354 | [39m    })[33m;[39m[0m[22m
+[2m    [0m [90m 355 | [39m[0m[22m
+[2m    [0m[31m[1m>[22m[2m[39m[90m 356 | [39m    expect(getByTestId([32m'food-quantity'[39m))[33m.[39mtoHaveTextContent([32m'1'[39m)[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m                                         [31m[1m^[22m[2m[39m[0m[22m
+[2m    [0m [90m 357 | [39m  })[33m;[39m[0m[22m
+[2m    [0m [90m 358 | [39m[0m[22m
+[2m    [0m [90m 359 | [39m  it([32m'should be able to increment an extra item quantity'[39m[33m,[39m async () [33m=>[39m {[0m[22m
+[2m[22m
+[2m      [2mat _callee12$ ([22m[2m[0m[36msrc/__tests__/pages/FoodDetails.spec.tsx[39m[0m[2m:356:42)[22m[2m[22m
+[2m      [2mat tryCatch ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:63:40)[22m[2m[22m
+[2m      [2mat Generator.invoke [as _invoke] ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:293:22)[22m[2m[22m
+[2m      [2mat Generator.next ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:118:21)[22m[2m[22m
+[2m      [2mat tryCatch ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:63:40)[22m[2m[22m
+[2m      [2mat invoke ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:154:20)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/regenerator-runtime/runtime.js[2m:164:13[22m[2m[22m
+[2m      [2mat tryCallOne ([22m[2mnode_modules/promise/lib/core.js[2m:37:12)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/promise/lib/core.js[2m:123:15[22m[2m[22m
+[2m      [2mat flush ([22m[2mnode_modules/asap/raw.js[2m:50:29)[22m[2m[22m
+
+[1m[31m  [1m● [22m[1mOrders › should be able to increment an extra item quantity[39m[22m
+
+    [2mexpect([22m[31melement[39m[2m).toHaveTextContent()[22m
+
+    Expected element to have text content:
+    [32m  0[39m
+    Received:
+[2m[22m
+[2m    [0m [90m 418 | [39m    expect(getByText([32m'Frango'[39m))[33m.[39mtoBeTruthy()[33m;[39m[0m[22m
+[2m    [0m [90m 419 | [39m[0m[22m
+[2m    [0m[31m[1m>[22m[2m[39m[90m 420 | [39m    expect(getByTestId([32m'extra-quantity-1'[39m))[33m.[39mtoHaveTextContent([32m'0'[39m)[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m                                            [31m[1m^[22m[2m[39m[0m[22m
+[2m    [0m [90m 421 | [39m[0m[22m
+[2m    [0m [90m 422 | [39m    await act(async () [33m=>[39m {[0m[22m
+[2m    [0m [90m 423 | [39m      fireEvent[33m.[39mpress(getByTestId([32m'increment-extra-1'[39m))[33m;[39m[0m[22m
+[2m[22m
+[2m      [2mat _callee15$ ([22m[2m[0m[36msrc/__tests__/pages/FoodDetails.spec.tsx[39m[0m[2m:420:45)[22m[2m[22m
+[2m      [2mat tryCatch ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:63:40)[22m[2m[22m
+[2m      [2mat Generator.invoke [as _invoke] ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:293:22)[22m[2m[22m
+[2m      [2mat Generator.next ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:118:21)[22m[2m[22m
+[2m      [2mat tryCatch ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:63:40)[22m[2m[22m
+[2m      [2mat invoke ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:154:20)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/regenerator-runtime/runtime.js[2m:164:13[22m[2m[22m
+[2m      [2mat tryCallOne ([22m[2mnode_modules/promise/lib/core.js[2m:37:12)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/promise/lib/core.js[2m:123:15[22m[2m[22m
+[2m      [2mat flush ([22m[2mnode_modules/asap/raw.js[2m:50:29)[22m[2m[22m
+
+[1m[31m  [1m● [22m[1mOrders › should be able to decrement an extra item quantity[39m[22m
+
+    [2mexpect([22m[31melement[39m[2m).toHaveTextContent()[22m
+
+    Expected element to have text content:
+    [32m  0[39m
+    Received:
+[2m[22m
+[2m    [0m [90m 490 | [39m    expect(getByText([32m'Bacon'[39m))[33m.[39mtoBeTruthy()[33m;[39m[0m[22m
+[2m    [0m [90m 491 | [39m[0m[22m
+[2m    [0m[31m[1m>[22m[2m[39m[90m 492 | [39m    expect(getByTestId([32m'extra-quantity-1'[39m))[33m.[39mtoHaveTextContent([32m'0'[39m)[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m                                            [31m[1m^[22m[2m[39m[0m[22m
+[2m    [0m [90m 493 | [39m[0m[22m
+[2m    [0m [90m 494 | [39m    await act(async () [33m=>[39m {[0m[22m
+[2m    [0m [90m 495 | [39m      fireEvent[33m.[39mpress(getByTestId([32m'increment-extra-1'[39m))[33m;[39m[0m[22m
+[2m[22m
+[2m      [2mat _callee19$ ([22m[2m[0m[36msrc/__tests__/pages/FoodDetails.spec.tsx[39m[0m[2m:492:45)[22m[2m[22m
+[2m      [2mat tryCatch ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:63:40)[22m[2m[22m
+[2m      [2mat Generator.invoke [as _invoke] ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:293:22)[22m[2m[22m
+[2m      [2mat Generator.next ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:118:21)[22m[2m[22m
+[2m      [2mat tryCatch ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:63:40)[22m[2m[22m
+[2m      [2mat invoke ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:154:20)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/regenerator-runtime/runtime.js[2m:164:13[22m[2m[22m
+[2m      [2mat tryCallOne ([22m[2mnode_modules/promise/lib/core.js[2m:37:12)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/promise/lib/core.js[2m:123:15[22m[2m[22m
+[2m      [2mat flush ([22m[2mnode_modules/asap/raw.js[2m:50:29)[22m[2m[22m
+
+[0m[7m[1m[31m FAIL [39m[22m[27m[0m [2msrc/__tests__/pages/[22m[1mDashboard.spec.tsx[22m
+[1m[31m  [1m● [22m[1mDashboard › should be able to list the food plates[39m[22m
+
+    Unable to find an element with the text: Ao molho. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    [36m<View[39m
+      [33mpointerEvents[39m=[32m"box-none"[39m
+      [33mstyle[39m=[32m{
+        Object {
+          "flex": 1,
+        }
+      }[39m
+    [36m>[39m
+      [36m<View[39m
+        [33mcollapsable[39m=[32m{true}[39m
+        [33mpointerEvents[39m=[32m"box-none"[39m
+        [33mstyle[39m=[32m{
+          Object {
+            "flex": 1,
+          }
+        }[39m
+      [36m>[39m
+        [36m<View[39m
+          [33mstyle[39m=[32m{
+            Array [
+              Object {
+                "backgroundColor": "#fff",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+            ]
+          }[39m
+        [36m>[39m
+          [36m<View[39m
+            [33mstyle[39m=[32m{
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#c72828",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 60,
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                  "paddingTop": 60,
+                },
+              ]
+            }[39m
+          [36m>[39m
+            [36m<Image[39m
+              [33msource[39m=[32m{
+                Object {
+                  "testUri": "../../../src/__mocks__/logo-header.png",
+                }
+              }[39m
+            [36m/>[39m
+            [36m<Text[39m
+              [33mallowFontScaling[39m=[32m{false}[39m
+              [33mstyle[39m=[32m{
+                Array [
+                  Object {
+                    "color": "#FFB84D",
+                    "fontSize": 24,
+                  },
+                  undefined,
+                  Object {
+                    "fontFamily": "Feather",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }[39m
+            [36m>[39m
+              [0m[0m
+            [36m</Text>[39m
+          [36m</View>[39m
+          [36m<View[39m
+            [33mstyle[39m=[32m{
+              Array [
+                Object {
+                  "marginTop": -28,
+                  "paddingBottom": 0,
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                  "paddingTop": 0,
+                },
+              ]
+            }[39m
+          [36m>[39m
+            [36m<View[39m
+              [33misFocused[39m=[32m{false}[39m
+              [33mstyle[39m=[32m{
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#f0f0f5",
+                    "borderColor": "#f0f0f5",
+                    "borderRadius": 10,
+                    "borderWidth": 2,
+                    "flexDirection": "row",
+                    "height": 60,
+                    "paddingBottom": 0,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 0,
+                    "width": "100%",
+                  },
+                ]
+              }[39m
+            [36m>[39m
+              [36m<Text[39m
+                [33mallowFontScaling[39m=[32m{false}[39m
+                [33mstyle[39m=[32m{
+                  Array [
+                    Object {
+                      "color": "#B7B7CC",
+                      "fontSize": 20,
+                    },
+                    Array [
+                      Object {
+                        "marginRight": 16,
+                      },
+                    ],
+                    Object {
+                      "fontFamily": "Feather",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }[39m
+              [36m>[39m
+                [0m[0m
+              [36m</Text>[39m
+              [36m<TextInput[39m
+                [33mallowFontScaling[39m=[32m{true}[39m
+                [33mplaceholder[39m=[32m"Qual comida você procura?"[39m
+                [33mplaceholderTextColor[39m=[32m"#B7B7CC"[39m
+                [33mrejectResponderTermination[39m=[32m{true}[39m
+                [33mstyle[39m=[32m{
+                  Array [
+                    Object {
+                      "color": "#6c6c80",
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "fontFamily": "Poppins-Regular",
+                      "fontSize": 16,
+                    },
+                  ]
+                }[39m
+                [33mtestID[39m=[32m"search-input"[39m
+                [33munderlineColorAndroid[39m=[32m"transparent"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</View>[39m
+          [36m</View>[39m
+          [36m<RCTScrollView>[39m
+            [36m<View>[39m
+              [36m<View[39m
+                [33mstyle[39m=[32m{
+                  Array [
+                    Object {
+                      "marginTop": 40,
+                    },
+                  ]
+                }[39m
+              [36m>[39m
+                [36m<Text[39m
+                  [33mstyle[39m=[32m{
+                    Array [
+                      Object {
+                        "color": "#3d3d4d",
+                        "fontFamily": "Poppins-Regular",
+                        "fontSize": 20,
+                        "fontStyle": "normal",
+                        "fontWeight": "600",
+                        "lineHeight": 30,
+                        "paddingBottom": 0,
+                        "paddingLeft": 20,
+                        "paddingRight": 20,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }[39m
+                [36m>[39m
+                  [0mCategorias[0m
+                [36m</Text>[39m
+                [36m<RCTScrollView[39m
+                  [33mcontentContainerStyle[39m=[32m{
+                    Object {
+                      "paddingHorizontal": 20,
+                    }
+                  }[39m
+                  [33mhorizontal[39m=[32m{true}[39m
+                  [33mshowsHorizontalScrollIndicator[39m=[32m{false}[39m
+                  [33mstyle[39m=[32m{
+                    Array [
+                      Object {
+                        "marginTop": 16,
+                      },
+                    ]
+                  }[39m
+                [36m>[39m
+                  [36m<View>[39m
+                    [36m<TouchableHighlight[39m
+                      [33mactiveOpacity[39m=[32m{0.6}[39m
+                      [33misSelected[39m=[32m{false}[39m
+                      [33mstyle[39m=[32m{
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "#f0f0f5",
+                            "borderColor": "#f0f0f5",
+                            "borderRadius": 8,
+                            "borderStyle": "solid",
+                            "borderWidth": 2,
+                            "height": 120,
+                            "justifyContent": "space-between",
+                            "marginRight": 8,
+                            "paddingBottom": 16,
+                            "paddingTop": 20,
+                            "textAlign": "center",
+                            "width": 120,
+                          },
+                        ]
+                      }[39m
+                      [33mtestID[39m=[32m"category-1"[39m
+                    [36m>[39m
+                      [36m<Image[39m
+                        [33mso...
+[2m[22m
+[2m    [0m [90m 89 | [39m    [36mconst[39m { getByText } [33m=[39m render([33m<[39m[33mDashboard[39m [33m/[39m[33m>[39m)[33m;[39m[0m[22m
+[2m    [0m [90m 90 | [39m[0m[22m
+[2m    [0m[31m[1m>[22m[2m[39m[90m 91 | [39m    await wait(() [33m=>[39m expect(getByText([32m'Ao molho'[39m))[33m.[39mtoBeTruthy()[33m,[39m {[0m[22m
+[2m    [0m [90m    | [39m                            [31m[1m^[22m[2m[39m[0m[22m
+[2m    [0m [90m 92 | [39m      timeout[33m:[39m [35m200[39m[33m,[39m[0m[22m
+[2m    [0m [90m 93 | [39m    })[33m;[39m[0m[22m
+[2m    [0m [90m 94 | [39m[0m[22m
+[2m[22m
+[2m      [2mat getElementError ([22m[2mnode_modules/@testing-library/react-native/dist/lib/query-helpers.js[2m:29:10)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/@testing-library/react-native/dist/lib/query-helpers.js[2m:175:13[22m[2m[22m
+[2m      [2mat getByText ([22m[2mnode_modules/@testing-library/react-native/dist/lib/query-helpers.js[2m:156:24)[22m[2m[22m
+[2m      [2mat _regenerator.default.awrap.timeout ([22m[2m[0m[36msrc/__tests__/pages/Dashboard.spec.tsx[39m[0m[2m:91:29)[22m[2m[22m
+[2m      [2mat Timeout.runExpectation [as _onTimeout] ([22m[2mnode_modules/wait-for-expect/lib/index.js[2m:46:25)[22m[2m[22m
+
+[1m[31m  [1m● [22m[1mDashboard › should be able to list the food plates filtered by category[39m[22m
+
+    Unable to find an element with the text: Ao molho. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    [36m<View[39m
+      [33mpointerEvents[39m=[32m"box-none"[39m
+      [33mstyle[39m=[32m{
+        Object {
+          "flex": 1,
+        }
+      }[39m
+    [36m>[39m
+      [36m<View[39m
+        [33mcollapsable[39m=[32m{true}[39m
+        [33mpointerEvents[39m=[32m"box-none"[39m
+        [33mstyle[39m=[32m{
+          Object {
+            "flex": 1,
+          }
+        }[39m
+      [36m>[39m
+        [36m<View[39m
+          [33mstyle[39m=[32m{
+            Array [
+              Object {
+                "backgroundColor": "#fff",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+            ]
+          }[39m
+        [36m>[39m
+          [36m<View[39m
+            [33mstyle[39m=[32m{
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#c72828",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 60,
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                  "paddingTop": 60,
+                },
+              ]
+            }[39m
+          [36m>[39m
+            [36m<Image[39m
+              [33msource[39m=[32m{
+                Object {
+                  "testUri": "../../../src/__mocks__/logo-header.png",
+                }
+              }[39m
+            [36m/>[39m
+            [36m<Text[39m
+              [33mallowFontScaling[39m=[32m{false}[39m
+              [33mstyle[39m=[32m{
+                Array [
+                  Object {
+                    "color": "#FFB84D",
+                    "fontSize": 24,
+                  },
+                  undefined,
+                  Object {
+                    "fontFamily": "Feather",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }[39m
+            [36m>[39m
+              [0m[0m
+            [36m</Text>[39m
+          [36m</View>[39m
+          [36m<View[39m
+            [33mstyle[39m=[32m{
+              Array [
+                Object {
+                  "marginTop": -28,
+                  "paddingBottom": 0,
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                  "paddingTop": 0,
+                },
+              ]
+            }[39m
+          [36m>[39m
+            [36m<View[39m
+              [33misFocused[39m=[32m{false}[39m
+              [33mstyle[39m=[32m{
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#f0f0f5",
+                    "borderColor": "#f0f0f5",
+                    "borderRadius": 10,
+                    "borderWidth": 2,
+                    "flexDirection": "row",
+                    "height": 60,
+                    "paddingBottom": 0,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 0,
+                    "width": "100%",
+                  },
+                ]
+              }[39m
+            [36m>[39m
+              [36m<Text[39m
+                [33mallowFontScaling[39m=[32m{false}[39m
+                [33mstyle[39m=[32m{
+                  Array [
+                    Object {
+                      "color": "#B7B7CC",
+                      "fontSize": 20,
+                    },
+                    Array [
+                      Object {
+                        "marginRight": 16,
+                      },
+                    ],
+                    Object {
+                      "fontFamily": "Feather",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }[39m
+              [36m>[39m
+                [0m[0m
+              [36m</Text>[39m
+              [36m<TextInput[39m
+                [33mallowFontScaling[39m=[32m{true}[39m
+                [33mplaceholder[39m=[32m"Qual comida você procura?"[39m
+                [33mplaceholderTextColor[39m=[32m"#B7B7CC"[39m
+                [33mrejectResponderTermination[39m=[32m{true}[39m
+                [33mstyle[39m=[32m{
+                  Array [
+                    Object {
+                      "color": "#6c6c80",
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "fontFamily": "Poppins-Regular",
+                      "fontSize": 16,
+                    },
+                  ]
+                }[39m
+                [33mtestID[39m=[32m"search-input"[39m
+                [33munderlineColorAndroid[39m=[32m"transparent"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</View>[39m
+          [36m</View>[39m
+          [36m<RCTScrollView>[39m
+            [36m<View>[39m
+              [36m<View[39m
+                [33mstyle[39m=[32m{
+                  Array [
+                    Object {
+                      "marginTop": 40,
+                    },
+                  ]
+                }[39m
+              [36m>[39m
+                [36m<Text[39m
+                  [33mstyle[39m=[32m{
+                    Array [
+                      Object {
+                        "color": "#3d3d4d",
+                        "fontFamily": "Poppins-Regular",
+                        "fontSize": 20,
+                        "fontStyle": "normal",
+                        "fontWeight": "600",
+                        "lineHeight": 30,
+                        "paddingBottom": 0,
+                        "paddingLeft": 20,
+                        "paddingRight": 20,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }[39m
+                [36m>[39m
+                  [0mCategorias[0m
+                [36m</Text>[39m
+                [36m<RCTScrollView[39m
+                  [33mcontentContainerStyle[39m=[32m{
+                    Object {
+                      "paddingHorizontal": 20,
+                    }
+                  }[39m
+                  [33mhorizontal[39m=[32m{true}[39m
+                  [33mshowsHorizontalScrollIndicator[39m=[32m{false}[39m
+                  [33mstyle[39m=[32m{
+                    Array [
+                      Object {
+                        "marginTop": 16,
+                      },
+                    ]
+                  }[39m
+                [36m>[39m
+                  [36m<View>[39m
+                    [36m<TouchableHighlight[39m
+                      [33mactiveOpacity[39m=[32m{0.6}[39m
+                      [33misSelected[39m=[32m{false}[39m
+                      [33mstyle[39m=[32m{
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "#f0f0f5",
+                            "borderColor": "#f0f0f5",
+                            "borderRadius": 8,
+                            "borderStyle": "solid",
+                            "borderWidth": 2,
+                            "height": 120,
+                            "justifyContent": "space-between",
+                            "marginRight": 8,
+                            "paddingBottom": 16,
+                            "paddingTop": 20,
+                            "textAlign": "center",
+                            "width": 120,
+                          },
+                        ]
+                      }[39m
+                      [33mtestID[39m=[32m"category-1"[39m
+                    [36m>[39m
+                      [36m<Image[39m
+                        [33mso...
+[2m[22m
+[2m    [0m [90m 245 | [39m    expect(getByText([32m'Pizzas'[39m))[33m.[39mtoBeTruthy()[33m;[39m[0m[22m
+[2m    [0m [90m 246 | [39m[0m[22m
+[2m    [0m[31m[1m>[22m[2m[39m[90m 247 | [39m    expect(getByText([32m'Ao molho'[39m))[33m.[39mtoBeTruthy()[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m           [31m[1m^[22m[2m[39m[0m[22m
+[2m    [0m [90m 248 | [39m    expect(getByText([32m'Veggie'[39m))[33m.[39mtoBeTruthy()[33m;[39m[0m[22m
+[2m    [0m [90m 249 | [39m[0m[22m
+[2m    [0m [90m 250 | [39m    await act(async () [33m=>[39m {[0m[22m
+[2m[22m
+[2m      [2mat getElementError ([22m[2mnode_modules/@testing-library/react-native/dist/lib/query-helpers.js[2m:29:10)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/@testing-library/react-native/dist/lib/query-helpers.js[2m:175:13[22m[2m[22m
+[2m      [2mat getByText ([22m[2mnode_modules/@testing-library/react-native/dist/lib/query-helpers.js[2m:156:24)[22m[2m[22m
+[2m      [2mat _callee5$ ([22m[2m[0m[36msrc/__tests__/pages/Dashboard.spec.tsx[39m[0m[2m:247:12)[22m[2m[22m
+[2m      [2mat tryCatch ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:63:40)[22m[2m[22m
+[2m      [2mat Generator.invoke [as _invoke] ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:293:22)[22m[2m[22m
+[2m      [2mat Generator.next ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:118:21)[22m[2m[22m
+[2m      [2mat tryCatch ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:63:40)[22m[2m[22m
+[2m      [2mat invoke ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:154:20)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/regenerator-runtime/runtime.js[2m:164:13[22m[2m[22m
+
+[1m[31m  [1m● [22m[1mDashboard › should be able to list the food plates filtered by name search[39m[22m
+
+    Unable to find an element with the text: Ao molho. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    [36m<View[39m
+      [33mpointerEvents[39m=[32m"box-none"[39m
+      [33mstyle[39m=[32m{
+        Object {
+          "flex": 1,
+        }
+      }[39m
+    [36m>[39m
+      [36m<View[39m
+        [33mcollapsable[39m=[32m{true}[39m
+        [33mpointerEvents[39m=[32m"box-none"[39m
+        [33mstyle[39m=[32m{
+          Object {
+            "flex": 1,
+          }
+        }[39m
+      [36m>[39m
+        [36m<View[39m
+          [33mstyle[39m=[32m{
+            Array [
+              Object {
+                "backgroundColor": "#fff",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+            ]
+          }[39m
+        [36m>[39m
+          [36m<View[39m
+            [33mstyle[39m=[32m{
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#c72828",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 60,
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                  "paddingTop": 60,
+                },
+              ]
+            }[39m
+          [36m>[39m
+            [36m<Image[39m
+              [33msource[39m=[32m{
+                Object {
+                  "testUri": "../../../src/__mocks__/logo-header.png",
+                }
+              }[39m
+            [36m/>[39m
+            [36m<Text[39m
+              [33mallowFontScaling[39m=[32m{false}[39m
+              [33mstyle[39m=[32m{
+                Array [
+                  Object {
+                    "color": "#FFB84D",
+                    "fontSize": 24,
+                  },
+                  undefined,
+                  Object {
+                    "fontFamily": "Feather",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }[39m
+            [36m>[39m
+              [0m[0m
+            [36m</Text>[39m
+          [36m</View>[39m
+          [36m<View[39m
+            [33mstyle[39m=[32m{
+              Array [
+                Object {
+                  "marginTop": -28,
+                  "paddingBottom": 0,
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                  "paddingTop": 0,
+                },
+              ]
+            }[39m
+          [36m>[39m
+            [36m<View[39m
+              [33misFocused[39m=[32m{false}[39m
+              [33mstyle[39m=[32m{
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#f0f0f5",
+                    "borderColor": "#f0f0f5",
+                    "borderRadius": 10,
+                    "borderWidth": 2,
+                    "flexDirection": "row",
+                    "height": 60,
+                    "paddingBottom": 0,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 0,
+                    "width": "100%",
+                  },
+                ]
+              }[39m
+            [36m>[39m
+              [36m<Text[39m
+                [33mallowFontScaling[39m=[32m{false}[39m
+                [33mstyle[39m=[32m{
+                  Array [
+                    Object {
+                      "color": "#B7B7CC",
+                      "fontSize": 20,
+                    },
+                    Array [
+                      Object {
+                        "marginRight": 16,
+                      },
+                    ],
+                    Object {
+                      "fontFamily": "Feather",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }[39m
+              [36m>[39m
+                [0m[0m
+              [36m</Text>[39m
+              [36m<TextInput[39m
+                [33mallowFontScaling[39m=[32m{true}[39m
+                [33mplaceholder[39m=[32m"Qual comida você procura?"[39m
+                [33mplaceholderTextColor[39m=[32m"#B7B7CC"[39m
+                [33mrejectResponderTermination[39m=[32m{true}[39m
+                [33mstyle[39m=[32m{
+                  Array [
+                    Object {
+                      "color": "#6c6c80",
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "fontFamily": "Poppins-Regular",
+                      "fontSize": 16,
+                    },
+                  ]
+                }[39m
+                [33mtestID[39m=[32m"search-input"[39m
+                [33munderlineColorAndroid[39m=[32m"transparent"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</View>[39m
+          [36m</View>[39m
+          [36m<RCTScrollView>[39m
+            [36m<View>[39m
+              [36m<View[39m
+                [33mstyle[39m=[32m{
+                  Array [
+                    Object {
+                      "marginTop": 40,
+                    },
+                  ]
+                }[39m
+              [36m>[39m
+                [36m<Text[39m
+                  [33mstyle[39m=[32m{
+                    Array [
+                      Object {
+                        "color": "#3d3d4d",
+                        "fontFamily": "Poppins-Regular",
+                        "fontSize": 20,
+                        "fontStyle": "normal",
+                        "fontWeight": "600",
+                        "lineHeight": 30,
+                        "paddingBottom": 0,
+                        "paddingLeft": 20,
+                        "paddingRight": 20,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }[39m
+                [36m>[39m
+                  [0mCategorias[0m
+                [36m</Text>[39m
+                [36m<RCTScrollView[39m
+                  [33mcontentContainerStyle[39m=[32m{
+                    Object {
+                      "paddingHorizontal": 20,
+                    }
+                  }[39m
+                  [33mhorizontal[39m=[32m{true}[39m
+                  [33mshowsHorizontalScrollIndicator[39m=[32m{false}[39m
+                  [33mstyle[39m=[32m{
+                    Array [
+                      Object {
+                        "marginTop": 16,
+                      },
+                    ]
+                  }[39m
+                [36m>[39m
+                  [36m<View>[39m
+                    [36m<TouchableHighlight[39m
+                      [33mactiveOpacity[39m=[32m{0.6}[39m
+                      [33misSelected[39m=[32m{false}[39m
+                      [33mstyle[39m=[32m{
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "#f0f0f5",
+                            "borderColor": "#f0f0f5",
+                            "borderRadius": 8,
+                            "borderStyle": "solid",
+                            "borderWidth": 2,
+                            "height": 120,
+                            "justifyContent": "space-between",
+                            "marginRight": 8,
+                            "paddingBottom": 16,
+                            "paddingTop": 20,
+                            "textAlign": "center",
+                            "width": 120,
+                          },
+                        ]
+                      }[39m
+                      [33mtestID[39m=[32m"category-1"[39m
+                    [36m>[39m
+                      [36m<Image[39m
+                        [33mso...
+[2m[22m
+[2m    [0m [90m 412 | [39m    expect(getByText([32m'Pizzas'[39m))[33m.[39mtoBeTruthy()[33m;[39m[0m[22m
+[2m    [0m [90m 413 | [39m[0m[22m
+[2m    [0m[31m[1m>[22m[2m[39m[90m 414 | [39m    expect(getByText([32m'Ao molho'[39m))[33m.[39mtoBeTruthy()[33m;[39m[0m[22m
+[2m    [0m [90m     | [39m           [31m[1m^[22m[2m[39m[0m[22m
+[2m    [0m [90m 415 | [39m    expect(getByText([32m'Veggie'[39m))[33m.[39mtoBeTruthy()[33m;[39m[0m[22m
+[2m    [0m [90m 416 | [39m[0m[22m
+[2m    [0m [90m 417 | [39m    [36mconst[39m inputSearch [33m=[39m getByTestId([32m'search-input'[39m)[33m;[39m[0m[22m
+[2m[22m
+[2m      [2mat getElementError ([22m[2mnode_modules/@testing-library/react-native/dist/lib/query-helpers.js[2m:29:10)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/@testing-library/react-native/dist/lib/query-helpers.js[2m:175:13[22m[2m[22m
+[2m      [2mat getByText ([22m[2mnode_modules/@testing-library/react-native/dist/lib/query-helpers.js[2m:156:24)[22m[2m[22m
+[2m      [2mat _callee9$ ([22m[2m[0m[36msrc/__tests__/pages/Dashboard.spec.tsx[39m[0m[2m:414:12)[22m[2m[22m
+[2m      [2mat tryCatch ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:63:40)[22m[2m[22m
+[2m      [2mat Generator.invoke [as _invoke] ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:293:22)[22m[2m[22m
+[2m      [2mat Generator.next ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:118:21)[22m[2m[22m
+[2m      [2mat tryCatch ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:63:40)[22m[2m[22m
+[2m      [2mat invoke ([22m[2mnode_modules/regenerator-runtime/runtime.js[2m:154:20)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/regenerator-runtime/runtime.js[2m:164:13[22m[2m[22m
+
+[1m[31m  [1m● [22m[1mDashboard › should be able to navigate to the food details page[39m[22m
+
+    Unable to find an element with the text: Ao molho. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    [36m<View[39m
+      [33mpointerEvents[39m=[32m"box-none"[39m
+      [33mstyle[39m=[32m{
+        Object {
+          "flex": 1,
+        }
+      }[39m
+    [36m>[39m
+      [36m<View[39m
+        [33mcollapsable[39m=[32m{true}[39m
+        [33mpointerEvents[39m=[32m"box-none"[39m
+        [33mstyle[39m=[32m{
+          Object {
+            "flex": 1,
+          }
+        }[39m
+      [36m>[39m
+        [36m<View[39m
+          [33mstyle[39m=[32m{
+            Array [
+              Object {
+                "backgroundColor": "#fff",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+            ]
+          }[39m
+        [36m>[39m
+          [36m<View[39m
+            [33mstyle[39m=[32m{
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#c72828",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 60,
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                  "paddingTop": 60,
+                },
+              ]
+            }[39m
+          [36m>[39m
+            [36m<Image[39m
+              [33msource[39m=[32m{
+                Object {
+                  "testUri": "../../../src/__mocks__/logo-header.png",
+                }
+              }[39m
+            [36m/>[39m
+            [36m<Text[39m
+              [33mallowFontScaling[39m=[32m{false}[39m
+              [33mstyle[39m=[32m{
+                Array [
+                  Object {
+                    "color": "#FFB84D",
+                    "fontSize": 24,
+                  },
+                  undefined,
+                  Object {
+                    "fontFamily": "Feather",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }[39m
+            [36m>[39m
+              [0m[0m
+            [36m</Text>[39m
+          [36m</View>[39m
+          [36m<View[39m
+            [33mstyle[39m=[32m{
+              Array [
+                Object {
+                  "marginTop": -28,
+                  "paddingBottom": 0,
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                  "paddingTop": 0,
+                },
+              ]
+            }[39m
+          [36m>[39m
+            [36m<View[39m
+              [33misFocused[39m=[32m{false}[39m
+              [33mstyle[39m=[32m{
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#f0f0f5",
+                    "borderColor": "#f0f0f5",
+                    "borderRadius": 10,
+                    "borderWidth": 2,
+                    "flexDirection": "row",
+                    "height": 60,
+                    "paddingBottom": 0,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 0,
+                    "width": "100%",
+                  },
+                ]
+              }[39m
+            [36m>[39m
+              [36m<Text[39m
+                [33mallowFontScaling[39m=[32m{false}[39m
+                [33mstyle[39m=[32m{
+                  Array [
+                    Object {
+                      "color": "#B7B7CC",
+                      "fontSize": 20,
+                    },
+                    Array [
+                      Object {
+                        "marginRight": 16,
+                      },
+                    ],
+                    Object {
+                      "fontFamily": "Feather",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }[39m
+              [36m>[39m
+                [0m[0m
+              [36m</Text>[39m
+              [36m<TextInput[39m
+                [33mallowFontScaling[39m=[32m{true}[39m
+                [33mplaceholder[39m=[32m"Qual comida você procura?"[39m
+                [33mplaceholderTextColor[39m=[32m"#B7B7CC"[39m
+                [33mrejectResponderTermination[39m=[32m{true}[39m
+                [33mstyle[39m=[32m{
+                  Array [
+                    Object {
+                      "color": "#6c6c80",
+                      "flexBasis": 0,
+                      "flexGrow": 1,
+                      "flexShrink": 1,
+                      "fontFamily": "Poppins-Regular",
+                      "fontSize": 16,
+                    },
+                  ]
+                }[39m
+                [33mtestID[39m=[32m"search-input"[39m
+                [33munderlineColorAndroid[39m=[32m"transparent"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</View>[39m
+          [36m</View>[39m
+          [36m<RCTScrollView>[39m
+            [36m<View>[39m
+              [36m<View[39m
+                [33mstyle[39m=[32m{
+                  Array [
+                    Object {
+                      "marginTop": 40,
+                    },
+                  ]
+                }[39m
+              [36m>[39m
+                [36m<Text[39m
+                  [33mstyle[39m=[32m{
+                    Array [
+                      Object {
+                        "color": "#3d3d4d",
+                        "fontFamily": "Poppins-Regular",
+                        "fontSize": 20,
+                        "fontStyle": "normal",
+                        "fontWeight": "600",
+                        "lineHeight": 30,
+                        "paddingBottom": 0,
+                        "paddingLeft": 20,
+                        "paddingRight": 20,
+                        "paddingTop": 0,
+                      },
+                    ]
+                  }[39m
+                [36m>[39m
+                  [0mCategorias[0m
+                [36m</Text>[39m
+                [36m<RCTScrollView[39m
+                  [33mcontentContainerStyle[39m=[32m{
+                    Object {
+                      "paddingHorizontal": 20,
+                    }
+                  }[39m
+                  [33mhorizontal[39m=[32m{true}[39m
+                  [33mshowsHorizontalScrollIndicator[39m=[32m{false}[39m
+                  [33mstyle[39m=[32m{
+                    Array [
+                      Object {
+                        "marginTop": 16,
+                      },
+                    ]
+                  }[39m
+                [36m>[39m
+                  [36m<View>[39m
+                    [36m<TouchableHighlight[39m
+                      [33mactiveOpacity[39m=[32m{0.6}[39m
+                      [33misSelected[39m=[32m{false}[39m
+                      [33mstyle[39m=[32m{
+                        Array [
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "#f0f0f5",
+                            "borderColor": "#f0f0f5",
+                            "borderRadius": 8,
+                            "borderStyle": "solid",
+                            "borderWidth": 2,
+                            "height": 120,
+                            "justifyContent": "space-between",
+                            "marginRight": 8,
+                            "paddingBottom": 16,
+                            "paddingTop": 20,
+                            "textAlign": "center",
+                            "width": 120,
+                          },
+                        ]
+                      }[39m
+                      [33mtestID[39m=[32m"category-1"[39m
+                    [36m>[39m
+                      [36m<Image[39m
+                        [33mso...
+[2m[22m
+[2m    [0m [90m 510 | [39m    [36mconst[39m { getByText[33m,[39m getByTestId } [33m=[39m render([33m<[39m[33mDashboard[39m [33m/[39m[33m>[39m)[33m;[39m[0m[22m
+[2m    [0m [90m 511 | [39m[0m[22m
+[2m    [0m[31m[1m>[22m[2m[39m[90m 512 | [39m    await wait(() [33m=>[39m expect(getByText([32m'Ao molho'[39m))[33m.[39mtoBeTruthy()[33m,[39m {[0m[22m
+[2m    [0m [90m     | [39m                            [31m[1m^[22m[2m[39m[0m[22m
+[2m    [0m [90m 513 | [39m      timeout[33m:[39m [35m200[39m[33m,[39m[0m[22m
+[2m    [0m [90m 514 | [39m    })[33m;[39m[0m[22m
+[2m    [0m [90m 515 | [39m[0m[22m
+[2m[22m
+[2m      [2mat getElementError ([22m[2mnode_modules/@testing-library/react-native/dist/lib/query-helpers.js[2m:29:10)[22m[2m[22m
+[2m      [2mat [22m[2mnode_modules/@testing-library/react-native/dist/lib/query-helpers.js[2m:175:13[22m[2m[22m
+[2m      [2mat getByText ([22m[2mnode_modules/@testing-library/react-native/dist/lib/query-helpers.js[2m:156:24)[22m[2m[22m
+[2m      [2mat _regenerator.default.awrap.timeout ([22m[2m[0m[36msrc/__tests__/pages/Dashboard.spec.tsx[39m[0m[2m:512:29)[22m[2m[22m
+[2m      [2mat Timeout.runExpectation [as _onTimeout] ([22m[2mnode_modules/wait-for-expect/lib/index.js[2m:46:25)[22m[2m[22m
+
+[1mTest Suites: [22m[1m[31m2 failed[39m[22m, [1m[32m2 passed[39m[22m, 4 total
+[1mTests:       [22m[1m[31m7 failed[39m[22m, [1m[32m5 passed[39m[22m, 12 total
+[1mSnapshots:   [22m0 total
+[1mTime:[22m        3.516s, estimated 5s
+[2mRan all test suites[22m[2m.[22m
+[2K[1G[31merror[39m Command failed with exit code 1.
