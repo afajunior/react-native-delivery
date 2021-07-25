@@ -61,16 +61,19 @@ const Dashboard: React.FC = () => {
   useEffect(() => {
     async function loadFoods(): Promise<void> {
       try {
-        let params = ''
-        if(searchValue) params = `?name_like=${searchValue}`
-        else if(selectedCategory) params = `?category_like=${selectedCategory}`
-        
-        const response = await api.get(
-              `/foods${params}`
-          );
+        let params = '';
+
+        if (searchValue) {
+          params = `?name_like=${searchValue}`;
+        } else if (selectedCategory) {
+          params = `?category_like=${selectedCategory}`;
+        }
+
+        const response = await api.get(`/foods${params}`);
         setFoods(response.data);
-      } catch(Err) {
-        Alert.alert("Não foi possivel carregar os pratos")
+      } catch (Err) {
+        console.log(Err);
+        Alert.alert('Não foi possivel carregar os pratos');
       }
     }
 
@@ -82,8 +85,8 @@ const Dashboard: React.FC = () => {
       try {
         const response = await api.get('/categories');
         setCategories(response.data);
-      } catch(Err) {
-        Alert.alert("Não foi possivel carregar as categorias")
+      } catch (Err) {
+        Alert.alert('Não foi possivel carregar as categorias');
       }
     }
 
@@ -91,7 +94,7 @@ const Dashboard: React.FC = () => {
   }, []);
 
   function handleSelectCategory(id: number): void {
-    setSelectedCategory(id);
+    setSelectedCategory(selectedCategory === id ? undefined : id);
   }
 
   return (

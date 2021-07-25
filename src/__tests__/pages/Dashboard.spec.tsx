@@ -77,7 +77,7 @@ describe('Dashboard', () => {
     ]);
 
     apiMock.onGet('/foods').reply(config => {
-      if (config.params.name_like === '') {
+      if (config.params?.name_like === '') {
         return [200, items];
       }
 
@@ -218,7 +218,7 @@ describe('Dashboard', () => {
     ];
 
     apiMock.onGet('/foods').reply(config => {
-      switch (config.params.category_like) {
+      switch (config.params?.category_like) {
         case 1:
           return [200, categoryOneItems];
 
@@ -382,7 +382,7 @@ describe('Dashboard', () => {
     ];
 
     apiMock.onGet('/foods').reply(config => {
-      switch (config.params.name_like) {
+      switch (config.params?.name_like) {
         case 'Ao molho':
           return [200, aoMolhoSearchResult];
 
@@ -498,7 +498,7 @@ describe('Dashboard', () => {
     ]);
 
     apiMock.onGet('/foods').reply(config => {
-      if (config.params.name_like === '') {
+      if (config.params?.name_like === '') {
         return [200, items];
       }
 
